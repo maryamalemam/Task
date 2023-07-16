@@ -26,20 +26,19 @@ console.log (fs.readFileSync("data.json") .toString())
    console.log(personObj)
 
  //6
- const person2 =  {
-    fname : "Adel" ,
-    lname : "Ahmed" ,
-    age : "40" ,
-    city : "Cairo" ,
-   }
-   console.log (person2)
-   
+ personObj.fname = "Adel" ,
+ personObj.lname = "Ahmed" ,
+ personObj.age = "40" ,
+ personObj.city =  "Cairo" ,
+
+ console.log (personObj)
+
  //7
- const person2Json = JSON.stringify (person2)
- console.log(person2Json)
+ const personObjJson = JSON.stringify ( personObj)
+  console.log(personObjJson)
 
  //8
- fs.writeFileSync("data1.json" , person2Json)
+ fs.writeFileSync("data.json" , personObjJson)
 
 
  
